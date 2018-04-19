@@ -1,0 +1,15 @@
+workspace 'MyWorkspace.xcworkspace'
+project 'MyApp2/MyApp2.xcodeproj'
+
+target 'MyApp2' do
+  platform :ios, '9.0'
+  project 'MyApp2/MyApp2.xcodeproj'
+  pod 'Masonry', '~> 1.0.2'
+end
+
+target 'MyApp1' do
+  platform :ios, '9.0'
+  project 'MyApp1/MyApp1.xcodeproj'
+  pod 'AFNetworking', '~> 3.1.0'
+  pod 'Masonry', '~> 1.0.2'
+end
